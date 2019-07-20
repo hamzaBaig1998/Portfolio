@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    <div id="fullpage">
+        <div class="section s1">
+            <div class="img-box">
+                <img src="assets/img/me.jpg" alt="A picture of me">
+            </div>
+            <h1>Hi, I am <strong>Hamza Baig</strong></h1>
+            <p class="description">I am a full stack web developer.</p>
+            <div class="flex">
+                <div class="link"><a href="https://www.instagram.com/baig.hamza1998/"><i class="fab fa-instagram"></i></a></div>
+                <div class="link"><a href="https://github.com/hamzaBaig1998"><i class="fab fa-github-square"></i></a></div>
+                <div class="link"><a href="https://www.linkedin.com/in/hamza-baig-52b14a173/"><i class="fab fa-linkedin"></i></a></div>
+            </div>
+        </div>
+        <div class="section s2">
+            <div class="slide">
+                <div class="container">
+                    <div class="card">
+                            <div class="icon"><i class="devicon-html5-plain"></i></div>
+                            <h1 class="title">HTML</h1>
+                    </div>
+                </div>    
+            </div>
+            <div class="slide">
+                    <div class="container">
+                            <div class="card">
+                                    <div class="icon"><i class="fab fa-css3-alt"></i></div>
+                                    <h1 class="title">CSS</h1>
+                            </div>
+                    </div> 
+            </div>
+            <div class="slide">
+                    <div class="container">
+                            <div class="card">
+                                    <div class="icon"><i class="fab fa-js"></i></div>
+                                    <h1 class="title">Javascript</h1>
+                            </div>
+                    </div> 
+            </div>
+            <div class="slide">
+                    <div class="container">
+                            <div class="card">
+                                    <div class="icon"><i class="fab fa-java"></i></div>
+                                    <h1 class="title">Java</h1>
+                            </div>
+                    </div> 
+            </div>
+            <div class="slide">
+                    <div class="container">
+                            <div class="card">
+                                    <div class="icon"><i class="devicon-csharp-plain"></i></div>
+                                    <h1 class="title">C#</h1>
+                            </div>
+                    </div> 
+            </div>
+            <div class="slide">
+                    <div class="container">
+                            <div class="card">
+                                    <div class="icon"><i class="devicon-react-original"></i></div>
+                                    <h1 class="title">React</h1>
+                            </div>
+                    </div> 
+            </div>
+            <div class="slide">
+                    <div class="container">
+                            <div class="card">
+                                    <div class="icon"><i class="devicon-nodejs-plain"></i></div>
+                                    <h1 class="title">Node</h1>
+                            </div>
+                    </div> 
+            </div>
+            <div class="slide">
+                    <div class="container">
+                            <div class="card">
+                                    <div class="icon"><i class="devicon-php-plain"></i></div>
+                                    <h1 class="title">Php</h1>
+                            </div>
+                    </div> 
+            </div>
+            <div class="slide">
+                    <div class="container">
+                            <div class="card">
+                                    <div class="icon"><i class="devicon-mysql-plain"></i></div>
+                                    <h1 class="title">MySQL</h1>
+                            </div>
+                    </div> 
+            </div>
+            <div class="slide">
+                    <div class="container">
+                            <div class="card">
+                                    <div class="icon"><i class="devicon-python-plain"></i></div>
+                                    <h1 class="title">Pyhton</h1>
+                            </div>
+                    </div> 
+            </div>
+            <div class="slide">
+                    <div class="container">
+                            <div class="card">
+                                    <div class="icon"><i class="devicon-sass-original"></i></div>
+                                    <h1 class="title">Sass</h1>
+                            </div>
+                    </div> 
+            </div>
+        </div>
+        <div class="section s3">
+            <div class="container">
+                <div class="contact">
+                    <div class="header">You can contact me on my email!</div>
+                    <div class="mail">
+                            <h1>baig.hamza11@gmail.com</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.min.js"></script>
+    <script>
+        new fullpage('#fullpage', {
+            //options here
+            autoScrolling:true,
+            navigation:true,
+            anchors:['section1','section2','section3'],
+            navigationTooltips:['Greetings','Skills','Contact'],
+            showActiveTooltip:true,
+            scrollingSpeed:1000,
+            controlArrows:false,
+            slidesNavigation:true,
+            parallax:true
+        });
+    </script>
+</body>
+</html>
