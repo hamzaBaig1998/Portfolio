@@ -1,56 +1,114 @@
+// Theme: color pallete
+// #f8e076
+// #F3A183
+// #EC6F66
+// #e43a15
+// #e65245
+// #C04848
+// #480048
+// Theme: variables
+$primary-color: #000;
+$secondary-color: #FF7700;
+$font-size: 16px;
+$border-radius: 4px;
+$heading-font:'Operator Mono';
+$body-font:'Merriweather';
+
+
+
 
 .s1{
-    background: #EC6F66;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #F3A183, #EC6F66);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #F3A183, #EC6F66); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+    // background: $primary-color;  /* fallback for old browsers */
+    // background: -webkit-linear-gradient(to right, #F3A183, #EC6F66);  /* Chrome 10-25, Safari 5.1-6 */
+    // background: linear-gradient(to right, #F3A183, #EC6F66); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+    // background-size: cover;
+    background: #C04848;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #480048, #C04848);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #480048, #C04848); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: cover;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    .download-button{
+        cursor: pointer;
+        padding: .5rem 1rem;
+        background-color: #fff;
+        border-radius: 10px;
+        font-weight: bold;
+    }
+    .portfolio-content{
+        margin-left: 45px;
+        width: 35%;
+    }
     h1{
-        font-family: 'Operator Mono';
+        font-family: $heading-font;
         font-weight: medium;
-        font-style: italic;
-        font-size: 2.5em;
-        text-align: center;
+        font-size: 3em;
+        text-align: left;
         color:#fff;
         strong{
             color:yellow;
         }
     }
     p{
-        text-align: center;
+        font-family: $body-font;
+        text-align: left;
         color: #fff;
-        font-size: 1.75em;
+        font-size: 1em;
+        margin-bottom: 35px;
     }
     .img-box{
         display: flex;
         justify-content: center;
         img{
-            border-radius: 5em;
-            width:10em;
+            border-radius: 30em;
+            width:30em;
+            box-shadow: 2px 6px 6px rgba(0,0,0,.3);
         }
     }
     .flex{
+        height: 100px;
+        width: 100%;
+        background-color: #fff;
+        border-radius: 5px;
         display: flex;
         justify-content: center;
+        box-shadow: 2px 6px 6px rgba(0,0,0,.3);
         .fab{
-            color:#fff;
             margin: .5em;
             font-size: 3em;
             transition: all .5s;
             &:hover{
-                font-size: 3.2em;
-                margin: .3em;
-                text-shadow: 2px 4px 4px rgba(0,0,0,.3);
+                font-size: 3.1em;
+                text-shadow: 2px 6px 6px rgba(0,0,0,.3);
             }
         }
-        
+        .github{
+            color:#000;
+        }
+        .facebook{
+            color:#1877F2;
+        }
+        .linkedin{
+            color:#0077B5;
+        }
+        .youtube{
+            color:#e65245;
+        }
+        .instagram{
+            color:#BD33A4;
+        }
     }
     
     
 }
 .s2{
-    background: #e43a15;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #e65245, #e43a15);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #e65245, #e43a15); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #C04848;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #480048, #C04848);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #480048, #C04848); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: cover;
     // Card
 .container{
@@ -60,9 +118,45 @@
         background: #fff;
         border-radius: 1em;
         width:50%;
-        text-align: center;
         padding: 3em 0em;
         transition:all .75s;
+        font-family: 'Merriweather', serif;
+        .link{
+            i{
+                margin-left: 1em;
+                color: #000;
+                font-size: 3em;
+            }
+        }
+        .header{
+            color:#e43a15;
+            font-size: 1em;
+            text-align: center;
+        }
+        .tag{
+            display: inline;
+            text-align:left ;
+            font-size: .65em;
+            background-color: #e43a15;
+            border-radius: 20px;
+            padding: .45em 1em;
+            margin-left: 5em;
+            color: #fff;
+        }
+        .description{
+            padding: 0 3em;
+            text-align: justify;
+        }
+        h1{
+            font-family: 'Merriweather', serif;
+            font-size: 1.5em;
+            text-align: center;
+        }
+        h2{
+            font-family: 'Merriweather', serif;
+            font-size: .65em;
+            text-align: center;
+        }
         .icon{
             font-size: 5em;
             margin-bottom: 5px;
@@ -84,13 +178,23 @@
     background: -webkit-linear-gradient(to right, #480048, #C04848);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #480048, #C04848); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: cover;
+    font-family: 'Merriweather';
+    .skill-descrition{
+        text-align: justify;
+    }
+    .duration-container{
+        display: flex;
+        justify-content: space-between;
+    }
     .container{
         display: flex;
         justify-content: center;
         box-sizing: border-box;
         .contact{
             background: #fff;
+            border-radius: 10px;
             width:50%;
+            box-shadow: 4px 6px 6px rgba(0,0,0,.4);
             padding: 5em 5em 5em 2.5em;
             .header{
                 color:#e43a15;
@@ -99,6 +203,10 @@
             h1{
                 font-family: 'Merriweather', serif;
                 font-size: 1.5em;
+            }
+            h2{
+                font-family: 'Merriweather', serif;
+                font-size: .65em;
             }
         }
     }
@@ -111,3 +219,60 @@ span{
     align-content: center;
     justify-content: center;
 }
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .s1{
+        display: block;
+        .img-box{
+            display: flex;
+            justify-content: center;
+            img{
+                margin-top: 1.5em;
+                border-radius: 30em;
+                width:15em;
+            }
+        }
+        .portfolio-content{
+            margin-left: 0px;
+            padding:25px;
+            width: 100%;
+        }
+        h1{
+            text-align: center;
+        }
+        p{
+            text-align: justify;
+            width: 450px;
+        }
+        .flex{
+            width: 90%;
+        }
+    }
+    .s3{
+        font-size: .85em;
+        .container{
+            .contact{
+                width: 70%;
+                margin: 0 50px;
+                padding: 2em;
+            }
+        }
+    }
+    .s2{
+        .container{
+            .card{
+                width:80%;
+                .description{
+                    font-size: .65em;
+                }
+                .link{
+                    i{
+                        font-size: 2.5em;
+                    }
+                }
+            }
+        }
+
+    }
+  }
